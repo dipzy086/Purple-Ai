@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PURPLE TRASH — AI Security Workbench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-grid"></div><div class="orb orb-a"></div><div class="orb orb-b"></div>
+<header class="topbar glass">
+  <div class="brand"><span class="logo">PT</span><div><b>PURPLE TRASH</b><small>AI SECURITY WORKBENCH</small></div></div>
+  <div class="status"><i></i> CORE ONLINE</div>
+  <button id="settingsBtn" class="iconbtn" title="Settings">⚙</button>
+</header>
+
+<main class="layout">
+<aside class="sidebar glass">
+  <button class="newchat" id="newChat">＋ New Session</button>
+  <nav>
+    <p>WORKSPACE</p>
+    <button class="nav active" data-tool="chat">◈ AI Chat</button>
+    <button class="nav" data-tool="recon">⌁ Recon Notes</button>
+    <button class="nav" data-tool="http">↗ HTTP Inspector</button>
+    <button class="nav" data-tool="crypto"># Hash / Encode</button>
+    <button class="nav" data-tool="json">{} JSON Formatter</button>
+  </nav>
+  <div class="scope glass2"><b>AUTHORIZED LAB</b><span>Use security tools only on systems you own or are explicitly authorized to test.</span></div>
+</aside>
+
+<section class="workspace">
+  <div class="hero glass" id="chatPane">
+    <div class="eyebrow">PURPLE TRASH // NEON CORE</div>
+    <h1>Build. Analyze. Secure.</h1>
+    <p>AI workspace untuk coding, research, dan cybersecurity workflows dengan antarmuka purple glass.</p>
+    <div class="chips"><button class="chip">Explain vulnerability</button><button class="chip">Review code</button><button class="chip">Build a lab</button></div>
+  </div>
+  <div class="messages glass" id="messages">
+    <div class="msg ai"><span class="avatar">PT</span><div><b>PURPLE TRASH</b><p>Core ready. Kirim task Anda — coding, debugging, security analysis, atau project planning.</p></div></div>
+  </div>
+  <form class="composer glass" id="composer">
+    <textarea id="prompt" rows="2" placeholder="Type your task..."></textarea>
+    <div class="composebar"><span>AI adapter: local / configured provider</span><button class="send" type="submit">SEND ↗</button></div>
+  </form>
+</section>
+</main>
+<script src="app.js"></script>
+</body></html>
